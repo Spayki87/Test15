@@ -21,6 +21,7 @@ namespace Степень_двойки
                 result *= 2;
                 degree++;
             }
+
             Console.WriteLine("Рандомное число - " + namber);
             Console.WriteLine("Минимальная степень двойки, превосходящая рандомное число - " + degree);
             Console.WriteLine("Расчет примераж: 2 ^ " + degree + " = " + result);
