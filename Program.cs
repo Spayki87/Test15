@@ -21,7 +21,7 @@ namespace Степень_двойки
 
             while (result <= number)
             {
-                result *= factor; ;
+                result *= factor;
                 degree++;
             }
 
