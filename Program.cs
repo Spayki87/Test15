@@ -12,19 +12,22 @@ namespace Степень_двойки
         {
             Random random = new Random();
 
-            int namber = random.Next(0, 100);
+            int minNumber = 0;
+            int maxNumber = 100;
+            int number = random.Next(minNumber, maxNumber + 1);
             int degree = 0;
             int result = 1;
+            int factor = 2;
 
-            while (result <= namber)
+            while (result <= number)
             {
-                result *= 2;
+                result *= factor; ;
                 degree++;
             }
 
-            Console.WriteLine("Рандомное число - " + namber);
-            Console.WriteLine("Минимальная степень двойки, превосходящая рандомное число - " + degree);
-            Console.WriteLine("Расчет примераж: 2 ^ " + degree + " = " + result);
+            Console.WriteLine("Рандомное число: " + number);
+            Console.WriteLine("Минимальная степень двойки, превосходящая рандомное число: " + degree);
+            Console.WriteLine("Расчет примера: " + factor + " ^ " + degree + " = " + result);
         }
     }
 }
